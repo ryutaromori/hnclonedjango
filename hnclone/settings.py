@@ -173,3 +173,9 @@ ACCEPT_UNINVITED_REGISTRATIONS = False
 SITE_NAME = 'Pythonic News'
 SITE_URL = 'https://news.python.sc'
 SITE_DOMAIN = 'news.python.sc'
+
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
+
+
